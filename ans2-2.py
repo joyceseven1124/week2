@@ -19,7 +19,7 @@ def avg(data):
     for a in range(0,len(x[1])) :
         if (x[1][a]["manager"] == False):
             money = money + x[1][a]["salary"]
-        average = money / len(x[1]) 
+        average = money / (len(x[1])-1)
     print(average)
 
 avg({
